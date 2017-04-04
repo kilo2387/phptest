@@ -47,19 +47,30 @@ class Computer{//定义一个电脑类
     }
 }
 //定义一个电脑的使用者的类
-class PcUser{
-    function install(){//安装USB的方法
-        $pc=new Computer;//首先拿来一台电脑
-        $up=new Upan;//拿来一个U盘
-        $um=new Umouse;//拿来一个USB鼠标
+//class PcUser{
+//    function install(){//安装USB的方法
+//        $pc=new Computer;//首先拿来一台电脑
+//        $up=new Upan;//拿来一个U盘
+//        $um=new Umouse;//拿来一个USB鼠标
+//
+//        $pc->useUSB($up);//把USB设备插入电脑, 使用电脑中使用USB设备的方法 来调用 要插入的设备
+//        $pc->useUSB($um);
+//    }
+//}
 
-        $pc->useUSB($up);//把USB设备插入电脑, 使用电脑中使用USB设备的方法 来调用 要插入的设备
-        $pc->useUSB($um);
-    }
-}
+//class PcUser{
+//    function install($object){
+//        $pc = new Computer();
+//        $pc->useUSB($object);
+//    }
+//}
+
+
+
 //实例化一个电脑用户
-$user=new PcUser;
-$user->install();//安装设备
+$user=new Computer;
+$usb = new Upan();
+$user->useUSB($usb);//安装设备
 /*-------------输出内容--------------
 U盘 装载成功
 U盘 开始工作
