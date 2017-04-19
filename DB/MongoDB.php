@@ -6,7 +6,9 @@
  * Time: 4:12
  */
 
-class MongodbDB implements \DB\InterfaceDB  {
+require './InterfaceDB.php';
+
+class MongodbDB implements InterfaceDB  {
     public function createTable(){}
     public function insert(){}
     public function delete(){}

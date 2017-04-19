@@ -5,7 +5,7 @@
  * Date: 2017/4/2
  * Time: 4:06
  */
-namespace DB;
+
 Interface InterfaceDB{
     public function createTable();
     public function insert();

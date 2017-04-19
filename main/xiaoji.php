@@ -6,11 +6,14 @@
  * Time: 4:15
  */
 
+
 $list = ['va'=>566];
 $arr = [];
-for ($i= 0;$i<900000;$i++){
-    array_push($arr,$list);
+for ($i= 0;$i<800000;$i++){
+
+    array_push($arr,['va'=>$i]);
 }
+var_dump(sizeof($arr));
 
 /**
  * @param $data  要统计的数据
@@ -19,7 +22,6 @@ for ($i= 0;$i<900000;$i++){
  * 对二维数组中的某一列进行数据统计
  */
 
-$s = microtime();
 function arraySumByColumn($data,$colmn){
     if(empty($data) || empty($colmn)){
         return 0;
@@ -30,18 +32,16 @@ function arraySumByColumn($data,$colmn){
     }
     return $temp;
 }
+/**************************/
+$HeaderTime1 = microtime(true);
 
 $value = arraySumByColumn($arr, 'va');
 print_r($value);
-echo 'erere';
-echo microtime() -$s;
+
+printf(" total run: %.2f s<br>".
+    "memory usage: %.2f M<br> ",
+    microtime(true)-$HeaderTime1,
+    memory_get_usage() / 1024 / 1024 );
+
+/**************************/
 echo '<br>';
-
-
-$d =  microtime();
-
-$ret = array_sum(array_column($arr, 'va'));
-print_r($ret);
-
-echo 'erere';
-echo microtime() -$d;

@@ -5,6 +5,8 @@
  * Date: 2017/1/7
  * Time: 22:16
  */
+$f = 7.5;
+echo 7.5%3.1;echo ('phptest');
 
 //echo 'hello world!'; //   16 8 4 2  8 + 4 + 1 = 13
 $state = 01101;
@@ -65,6 +67,9 @@ $b_wei = -6;
 //$num = $a_wei >> 9;
 //$num = $b_wei << 3;
 echo $a_wei | $b_wei;
+
+echo 7.5 % 3;
+
 
 
 
