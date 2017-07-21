@@ -12,6 +12,8 @@
  */
 ini_set('memcache.hash_strategy', 'consistent');
 
+
+/* memcached + nginx consistent算法 */
 function createCache()
 {
     $arr=array(

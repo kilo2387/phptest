@@ -3,6 +3,8 @@
  * Created by kilo with IntelliJ IDEA on 2017/6/8 21:01.
  *
  */
+/*memcached addServer 轮询*/
+
 function createCache() {
     $arr = array (
         array ("host" => "112.74.182.163", "port" => 11211, "weight" => 40 ),

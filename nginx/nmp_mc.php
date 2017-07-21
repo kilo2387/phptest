@@ -3,6 +3,8 @@
  * Created by kilo with IntelliJ IDEA on 2017/7/17 19:03.
  *
  */
+
+/* memcache hash 插入 */
 ini_set('memcache.hash_strategy', 'consistent');
 
 function createCache(){

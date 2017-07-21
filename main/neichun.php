@@ -3,7 +3,7 @@
  * Created by kilo with IntelliJ IDEA on 2017/6/19 2:00.
  *
  */
-
+/* php内在使用测试 */
 class Nei{
     public $name;
     public $age;
@@ -44,7 +44,6 @@ $HeaderTime = microtime(true);
 //    $mem->set('obj1',$temp,0, 30000);
 //}
 
-
 for ($j=0;$j<3000;$j++){
 
     $obj = ['jgy',$j,'X'];
@@ -60,16 +59,12 @@ for ($j=0;$j<3000;$j++){
     array_push($temp, $obj);
     $mem->set('obj2',$temp,0, 30000);
 }
-//
-
 
 printf(" total run: %.2f s<br>".
     "memory usage: %.2f M<br> ",
     microtime(true)-$HeaderTime,
     memory_get_usage() / 1024 / 1024 );
 die();
-
-
 //$temp = $mem->get('obj2');
 //var_dump($temp);die();
 //

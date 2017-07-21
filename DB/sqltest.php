@@ -5,6 +5,7 @@
  */
 
 
+/* mysql 连接 测试*/
 $id = 100000 + random_int(1,30000);
 //phpinfo();
 //echo $id;

@@ -4,6 +4,8 @@
  *
  */
 
+
+/* nginx hash 测试单元 */
 for($i = 90000; $i < 100000; $i++){
     $url = 'http://192.168.209.128:8006/user'.$i.'.html';
     $ch = curl_init($url);

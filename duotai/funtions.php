@@ -6,9 +6,8 @@
  * Time: 0:54
  */
 
-/**
- * Class Funtions 公共函数库
- */
+
+/* Class Funtions 公共函数库 */
 
 class Funtions
 {

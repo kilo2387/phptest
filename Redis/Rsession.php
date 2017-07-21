@@ -3,7 +3,7 @@
  * Created by kilo with IntelliJ IDEA on 2017/7/20 14:17.
  *
  */
-
+/* Redis session共享 */
 ini_set("session.save_handler", "redis");
 ini_set("session.save_path", "tcp://localhost:6379");
 

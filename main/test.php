@@ -5,6 +5,8 @@
  * Date: 2017/1/7
  * Time: 22:16
  */
+
+
 $f = 7.5;
 echo 7.5%3.1;echo ('phptest');
 
@@ -33,9 +35,6 @@ $state = 13;
 //    10000
 //    11101
 
-
-
-
 $state = $state & ~16;
 //echo decbin($state);
 
@@ -60,14 +59,9 @@ $b_wei = -6;
 //011111010
 //100000101
 
-
-
-
-
 //$num = $a_wei >> 9;
 //$num = $b_wei << 3;
 echo $a_wei | $b_wei;
-
 echo 7.5 % 3;
 
 

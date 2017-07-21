@@ -4,7 +4,7 @@
  *
  */
 
-
+/*memcached addServer 轮询*/
 function createCache()
 {
     $arr=array(

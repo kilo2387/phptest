@@ -4,6 +4,8 @@
  *
  */
 
+
+/* redis 测试 */
 $HeaderTime = microtime(true);
 $redis = new Redis();
 $redis->connect('localhost', 6379);
