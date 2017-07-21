@@ -6,3 +6,14 @@
  * Time: 4:13
  */
 
+Class DB{
+    public function create(){
+
+    }
+    public function insert(){
+
+    }
+    public function find(){
+
+    }
+}

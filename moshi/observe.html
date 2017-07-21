@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    #male{
+        width: 100px;
+        height: 100px;
+        border: 1px solid cornflowerblue;
+    }
+    #womale{
+        width: 100px;
+        height: 100px;
+        border: 1px solid cornflowerblue;
+    }
+    #yao{
+        width: 100px;
+        height: 100px;
+        border: 1px solid cornflowerblue;
+    }
+</style>
+<body>
+
+    <select id="observe">
+        <option>男</option>
+        <option>女</option>
+        <option>妖妖仙子</option>
+    </select>
+
+<div id="male"></div>
+<div id="womale"></div>
+<div id="yao"></div>
+
+</body>
+<script>
+    //被观察者
+    var ob = document.getElementById('observe');
+
+    //观察者表
+    ob.observes = {};
+
+    ob.attach = function (key, obj) {
+        this.observes[key] = obj;
+    };
+
+    ob.detach = function (key) {
+        delete this.observes[key]
+    };
+
+    // 通知
+    ob.onchange = ob.notify = function () {
+        for(var key in this.observes){
+//            console.log(this.observes[hal]);
+            this.observes[key].update(this);
+        }
+    };
+
+    // 观察者1
+    var watchsex = document.getElementById('male');
+    watchsex.update = function (observee) {
+        alert('wedf');
+    };
+    ob.attach('number1', watchsex);
+
+</script>
+</html>

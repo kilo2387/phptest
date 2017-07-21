@@ -21,7 +21,7 @@ class Person extends Father {
         echo parent::lhl();
     }
     public static function read(){
-        return parent::$name;
+        return self::$age;
     }
 
 }
@@ -32,7 +32,8 @@ class Person extends Father {
 
 //静态属性
 //echo Person::$age;
-echo Person::test();
+//echo Person::test();
+echo (new Person())->read();
 //静态方法
 //echo Person::read();
 

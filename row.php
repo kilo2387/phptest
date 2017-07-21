@@ -1,35 +1,17 @@
+<?php
 
-<div class="container">
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-6 column">
-        </div>
-        <div class="col-md-6 column">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-8 column">
-        </div>
-        <div class="col-md-4 column">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-4 column">
-        </div>
-        <div class="col-md-4 column">
-        </div>
-        <div class="col-md-4 column">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-2 column">
-        </div>
-        <div class="col-md-6 column">
-        </div>
-        <div class="col-md-4 column">
-        </div>
-    </div>
-</div>
+echo 'row';
+
+//当用户第一次请求服务时
+//
+//session 在服务器，存储用户的唯一标识
+//
+//cookie 在客户端存储用户的唯一标识
+//
+//当用户再次刷新请求时会携带cookie里面的用户唯一标识
+//
+//根据这个标识来识别出用户的session
+//
+//但是cookie不安全 且容易修改
+//
+//所以多数用session保存数据
