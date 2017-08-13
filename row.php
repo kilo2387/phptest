@@ -1,6 +1,8 @@
 <?php
 
-echo 'row';
+var_dump(explode('','ioosjflwr'));
+
+var_dump((int) 'gh34674.89cccc');
 
 //当用户第一次请求服务时
 //

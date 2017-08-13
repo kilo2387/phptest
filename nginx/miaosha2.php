@@ -3,7 +3,7 @@
  * Created by kilo with IntelliJ IDEA on 2017/7/19 21:31.
  *
  */
-/* 秒杀功能 */
+
 //$fp = fopen('./lock.txt', 'a+');
 $id = mt_rand(2,199999);
 $conn = mysqli_connect('localhost', 'root', 'jkljkl', 'test');

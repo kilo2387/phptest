@@ -4,8 +4,6 @@
  *
  */
 
-
-/* mysql事务 */
 $mysql = new mysqli('localhost', 'root', 'jkljkl');
 //$mysql->mysqli('localhost', 'root', 'jkljkl');
 //$mysql->autocommit(true);

@@ -5,9 +5,6 @@
  */
 
 class ActiveRecode{
-    public function connect(DB $object){
-        $object->connect();
-    }
     public function create(DB $object){
         $object->create();
     }

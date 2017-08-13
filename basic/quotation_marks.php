@@ -60,14 +60,14 @@ echo '<br>';
 
 // 变量的域
 $a = 9;
-function test(&$b){
-    static $b = 2;
-    $b++;
-    return $b;
+function test(&$a){
+    static $a = 2;
+    $a++;
+    return $a;
 }
 test($a);
 test($a);
-echo $b.'<br>';
+echo $a.'<br>';
 
 //获取客户ip getenv 获取系统的环境变量
 echo $_SERVER['REMOTE_ADDR'] ,'fuck', getenv('REMOTE_ADDR'), '<br>';

@@ -3,9 +3,9 @@
  * Created by kilo with IntelliJ IDEA on 2017/6/15 22:20.
  *
  */
-/* redis set集合测试 */
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+
 
 $redis = new Redis();
 //$redis->connect('192.168.209.128', 6379);
